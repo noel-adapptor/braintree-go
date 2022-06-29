@@ -1,12 +1,12 @@
 # Braintree Go
 
-[![GoDoc](https://godoc.org/github.com/braintree-go/braintree-go?status.svg)](http://godoc.org/github.com/braintree-go/braintree-go)
-[![Build Status](https://travis-ci.com/braintree-go/braintree-go.png?branch=master)](https://travis-ci.com/braintree-go/braintree-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/braintree-go/braintree-go)](https://goreportcard.com/report/github.com/braintree-go/braintree-go)
+[![GoDoc](https://godoc.org/github.com/noel-adapptor/braintree-go?status.svg)](http://godoc.org/github.com/noel-adapptor/braintree-go)
+[![Build Status](https://travis-ci.com/noel-adapptor/braintree-go.png?branch=master)](https://travis-ci.com/noel-adapptor/braintree-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/noel-adapptor/braintree-go)](https://goreportcard.com/report/github.com/noel-adapptor/braintree-go)
 
 A Go client library for [Braintree](https://www.braintreepayments.com), the payments company behind awesome companies like GitHub, Heroku, and 37signals.
 
-This is *not* an official client library. Braintree maintains server-side libraries for [Ruby](https://www.github.com/braintree/braintree_ruby), [Python](https://www.github.com/braintree/braintree_python), [PHP](https://www.github.com/braintree/braintree_php), [Perl](https://www.github.com/braintree/braintree_perl), [Node](https://www.github.com/braintree/braintree_node), [C#](https://www.github.com/braintree/braintree_dotnet) and [Java](https://www.github.com/braintree/braintree_java), but not Go. This package implements the core functionality of the other client libraries, but it's missing a few advanced features.
+This is _not_ an official client library. Braintree maintains server-side libraries for [Ruby](https://www.github.com/braintree/braintree_ruby), [Python](https://www.github.com/braintree/braintree_python), [PHP](https://www.github.com/braintree/braintree_php), [Perl](https://www.github.com/braintree/braintree_perl), [Node](https://www.github.com/braintree/braintree_node), [C#](https://www.github.com/braintree/braintree_dotnet) and [Java](https://www.github.com/braintree/braintree_java), but not Go. This package implements the core functionality of the other client libraries, but it's missing a few advanced features.
 
 With that said, this package contains more than enough to get you started accepting payments using Braintree. If there's a feature the other client libraries implement that you really need, open an issue (or better yet, a pull request).
 
@@ -15,7 +15,7 @@ With that said, this package contains more than enough to get you started accept
 Setting up your credentials is easy.
 
 ```go
-import "github.com/braintree-go/braintree-go"
+import "github.com/noel-adapptor/braintree-go"
 
 bt := braintree.New(
   braintree.Sandbox,
@@ -45,22 +45,22 @@ In addition to creating transactions, you can also tokenize credit card informat
 
 ### Installation
 
-The usual. `go get github.com/braintree-go/braintree-go`
+The usual. `go get github.com/noel-adapptor/braintree-go`
 
 ### Supported Go Versions
 
-* 1.7
-* 1.8
-* 1.9
-* 1.10
-* 1.11
-* 1.12
+- 1.7
+- 1.8
+- 1.9
+- 1.10
+- 1.11
+- 1.12
 
 ### Documentation
 
 Braintree provides a [ton of documentation](https://www.braintreepayments.com/docs/ruby/guide/overview) on how to use their API. I recommend you use the Ruby documentation when following along, as the Ruby client library is broadly similar to this one.
 
-For details on this package, see [GoDoc](http://godoc.org/github.com/braintree-go/braintree-go).
+For details on this package, see [GoDoc](http://godoc.org/github.com/noel-adapptor/braintree-go).
 
 ### Testing
 
@@ -87,7 +87,7 @@ import (
   "testing"
   "net/http/httptest"
 
-  "github.com/braintree-go/braintree-go"
+  "github.com/noel-adapptor/braintree-go"
 )
 
 func TestMyWebhook(t *testing.T) {

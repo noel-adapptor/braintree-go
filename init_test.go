@@ -1,3 +1,4 @@
+//go:build unit || integration
 // +build unit integration
 
 package braintree
@@ -10,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/braintree-go/braintree-go/testhelpers"
+	"github.com/noel-adapptor/braintree-go/testhelpers"
 )
 
 const (

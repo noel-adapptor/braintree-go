@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"time"
 
-	"github.com/braintree-go/braintree-go/customfields"
+	"github.com/noel-adapptor/braintree-go/customfields"
 )
 
 type TransactionStatus string
@@ -55,6 +55,7 @@ type Transaction struct {
 	CurrencyISOCode              string                    `xml:"currency-iso-code"`
 	Amount                       *Decimal                  `xml:"amount"`
 	OrderId                      string                    `xml:"order-id"`
+	GraphQLId                    string                    `xml:"global-id"`
 	PaymentMethodToken           string                    `xml:"payment-method-token"`
 	PaymentMethodNonce           string                    `xml:"payment-method-nonce"`
 	MerchantAccountId            string                    `xml:"merchant-account-id"`
